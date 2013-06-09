@@ -1,6 +1,6 @@
 #import "EBRapidAging.h"
 #import <sys/sysctl.h>
-#import <EBFoundation/EBFoundation.h>
+#import <EchoBravo/EBFoundation.h>
 
 BOOL EBRapidAgingSetEnabled(EBRapidAgingType type, BOOL enabled)
 {
