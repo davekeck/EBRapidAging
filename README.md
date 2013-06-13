@@ -5,13 +5,7 @@ EBRapidAgingSetEnabled() is a simple function to enable (or disable) "rapid agin
 ## Requirements
 
 - Mac OS 10.8 or iOS 6. (Earlier platforms have not been tested.)
-- Automatic reference counting (ARC) must be enabled for the source files.
 
 ## Integration
 
-1. Integrate [EBFoundation](https://github.com/davekeck/EBFoundation) into your project.
-2. Drag EBRapidAging.xcodeproj into your project's file hierarchy.
-3. In your target's "Build Phases" tab:
-    * Add EBRapidAging as a dependency ("Target Dependencies" section)
-    * Link against EBRapidAging ("Link Binary With Libraries" section)
-4. Add `#import <EchoBravo/EBRapidAging.h>` to your source files.
+Integrate EBRapidAging by simply adding `EBRapidAging.h` and `EBRapidAging.m` to your Xcode project.

@@ -1,6 +1,5 @@
 #import "EBRapidAging.h"
 #import <sys/sysctl.h>
-#import <EchoBravo/EBFoundation.h>
 
 BOOL EBRapidAgingSetEnabled(EBRapidAgingType type, BOOL enabled)
 {
@@ -12,8 +11,5 @@ BOOL EBRapidAgingSetEnabled(EBRapidAgingType type, BOOL enabled)
     else if (type == EBRapidAgingTypeThread)
         sysctlValue = (enabled ? KERN_RAGE_THREAD : KERN_UNRAGE_THREAD);
     
-    int sysctlResult = sysctlbyname("kern.rage_vnode", nil, nil, &sysctlValue, sizeof(sysctlValue));
-        EBAssertOrRecover(!sysctlResult, return NO);
-    
-    return YES;
+    return !sysctlbyname("kern.rage_vnode", nil, nil, &sysctlValue, sizeof(sysctlValue));
 }
