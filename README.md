@@ -9,3 +9,11 @@ EBRapidAgingSetEnabled() is a simple function to enable (or disable) "rapid agin
 ## Integration
 
 Integrate EBRapidAging by simply adding `EBRapidAging.h` and `EBRapidAging.m` to your Xcode project.
+
+## Credits
+
+EBRapidAging was created for [Lasso](http://las.so).
+
+## License
+
+EBRapidAging is available under the MIT license; see the LICENSE file for more information.
